@@ -1,0 +1,1 @@
+class n{events={};on(s,t){this.events[s]||(this.events[s]=[]),this.events[s].push(t)}off(s,t){this.events[s]&&(this.events[s]=this.events[s].filter(e=>e!==t))}emit(s,...t){this.events[s]&&this.events[s].forEach(e=>e(...t))}}const i=new n;function r(){return i}export{r as g};
